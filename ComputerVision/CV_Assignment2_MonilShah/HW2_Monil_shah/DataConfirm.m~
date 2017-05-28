@@ -1,0 +1,20 @@
+load I11.txt
+load I22.txt
+m1 = I11;
+m2 = I22;
+ 
+figure(1) title('stereo Image pair 1");
+subplot(121);
+im1 = imread('IMG_1020.JPG');
+imshow(im1);
+hold on;
+plot(m1(:,1), m1(:,2), 'R+', 'LineWidth', 2, 'MarkerSize',10);
+hold off;
+
+
+subplot(122);
+im2 = imread('IMG_1021.JPG');
+imshow(im2);
+hold on;
+plot(m2(:,1), m2(:,2), 'R+', 'LineWidth', 2, 'MarkerSize',10);
+hold off;
